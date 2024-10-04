@@ -44,7 +44,7 @@ pipeline {
                     def ashuCred = "27c08b75-0302-4ccb-a3d6-8c074d119785"
                     // building image 
                     docker.build(imageName + ":" + imageTag , " -f Dockerfile .")
-                     pushing image to dockerhub
+                     //pushing image to dockerhub
                     docker.withRegistry('https://registry.hub.docker.com',ashuCred){
                        docker.image(imageName + ":" + imageTag).push()
                   
