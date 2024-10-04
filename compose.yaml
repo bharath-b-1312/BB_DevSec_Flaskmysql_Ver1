@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  bbdb:
+    image: mysql:8.0
+    container_name: bbdbc1
+    environment:
+      MYSQL_ROOT_PASSWORD: example
+      MYSQL_DATABASE: testdb
+
+  bbflaskwebapp:
+    image: bbflask:webappv1
+    build: . #location of dockerfile, here . means current location
+    ports:
+      - 3150:5000 #left side is host port and right i container
+    environment:
+      FLASK_ENV: development
+      MYSQL_HOST: bbdb #db servername
+      MYSQL_USER: root #db username
+      MYSQL_PASSWORD: example #db user pwd
+      MYSQL_DATABASE: testdb
+    depends_on:
+      - bbdb
+
+  
