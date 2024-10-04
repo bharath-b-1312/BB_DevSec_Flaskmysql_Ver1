@@ -1,0 +1,6 @@
+projectKey=bb-localproj
+serverUrl=http://3.228.109.178:9000
+serverVersion=10.7.0.96327
+dashboardUrl=http://3.228.109.178:9000/dashboard?id=bb-localproj
+ceTaskId=09ecad58-ca68-428d-9415-13a79429d762
+ceTaskUrl=http://3.228.109.178:9000/api/ce/task?id=09ecad58-ca68-428d-9415-13a79429d762

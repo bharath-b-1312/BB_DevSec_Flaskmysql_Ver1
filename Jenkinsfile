@@ -7,7 +7,7 @@ pipeline {
                 // using echo to print message 
                 echo 'we are now fetching github code in below'
                 // using git to download git repo 
-                git branch: 'main', url: 'https://github.com/bharath-b-1312/BB_DevSec_Flaskmysql.git'
+                git branch: 'main', url: 'https://github.com/bharath-b-1312/BB_DevSec_Flaskmysql_Ver1.git'
                 // using sh command to run some commands
                 sh 'ls '
             }
